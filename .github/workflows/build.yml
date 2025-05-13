@@ -1,6 +1,9 @@
-name: PlatformIO CI
-
-on: [push]
+name: Build Haybox
+on: 
+  push:
+    paths:
+      - '.github/workflows/build.yml'
+  workflow_dispatch:
 
 jobs:
   build:
